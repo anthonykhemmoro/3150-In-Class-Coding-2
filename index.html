@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Interactive Animal Reveal</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Big box with everything inside -->
+    <div class="main-box">
+
+      <!-- Title section -->
+      <div class="title-box">
+        <h1>Welcome to the Interactive Reveal What’s that Animal UI</h1>
+      </div>
+
+      <!-- Instructions section -->
+      <div class="instructions-box">
+        <p>Click on the buttons below to reveal the animal images</p>
+      </div>
+
+      <div class="animal-area">
+
+        <div class="animal-columns">
+
+          <!-- Cat column -->
+          <div class="animal-column">
+            <div id="catBox" class="animal-box hidden">
+              <img src="tabby-cat.jpg" alt="Cat">
+              <!-- Hide and reveal buttons -->
+              <button class="hide-btn" data-animal="cat">Hide Result</button>
+            </div>
+            <button id="catBtn" class="animal-btn">Reveal a CAT</button>
+          </div>
+
+          <!-- Dog column -->
+          <div class="animal-column">
+            <div id="dogBox" class="animal-box hidden">
+              <img src="dog.jpg" alt="Dog">
+              <button class="hide-btn" data-animal="dog">Hide Result</button>
+            </div>
+            <button id="dogBtn" class="animal-btn">Reveal a DOG</button>
+          </div>
+
+          <!-- Cow column -->
+          <div class="animal-column">
+            <div id="cowBox" class="animal-box hidden">
+              <img src="cow.jpg" alt="Cow">
+              <button class="hide-btn" data-animal="cow">Hide Result</button>
+            </div>
+            <button id="cowBtn" class="animal-btn">Reveal a COW</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- counter and reset -->
+    <div class="bottom-row">
+      <button id="resetBtn">Reset Zoo</button>
+      <h3 id="counter">Animals on screen: 0</h3>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

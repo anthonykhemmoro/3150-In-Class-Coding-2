@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.page {
+  width: 95%;
+  margin: 12px auto;
+}
+/*heres the big outer box*/
+.main-box {
+  border: 2px solid #007BFF;
+  background-color: #f1f1f1;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+/*this is all the other boxes inside the big box*/
+.title-box,
+.instructions-box,
+.animal-area {
+  border: 2px solid #007BFF;
+  background-color: #f1f1f1;
+  margin-bottom: 12px;
+}
+/*the title box and instruction box*/
+.title-box {
+  text-align: center;
+  padding: 14px;
+}
+
+.instructions-box {
+  text-align: center;
+  padding: 12px;
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.instructions-box p {
+  margin: 0;
+  font-size: 18px;
+}
+/*heres the part for where all te animals are*/
+.animal-area {
+  min-height: 340px;
+  padding: 14px 20px 10px 20px;
+  margin-bottom: 0;
+}
+
+.animal-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.animal-column {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+/*this box has all of the animals pics*/
+.animal-box {
+  width: 100%;
+  max-width: 260px;
+  min-height: 260px;
+  border: 2px solid #007BFF;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.animal-box img {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+/*these are for all the buttons*/
+.hidden {
+  visibility: hidden;
+}
+
+.animal-btn,
+.hide-btn,
+#resetBtn {
+  padding: 10px 18px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  background-color: white;
+  cursor: pointer;
+}
+
+.hide-btn {
+  min-width: 140px;
+  background-color: #5f9bd1;
+  color: white;
+  border: 2px solid #4d7ea8;
+}
+
+.animal-btn.active {
+  background-color: #9acd32;
+  color: black;
+  border-radius: 12px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+}
+
+#counter {
+  border: 2px solid #007BFF;
+  background-color: white;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
